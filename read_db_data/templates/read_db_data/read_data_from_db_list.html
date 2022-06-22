@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Django Read Mysql DATA</title>
+</head>
+<body>
+
+<div id="content">
+    <h1>Mysql DATA</h1>
+    <ul>
+        {% for data in object_list %}
+        <li><a href="{% url 'detail' data.id %}">{{data}}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+</body>
+</html>
